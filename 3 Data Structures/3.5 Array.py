@@ -10,7 +10,7 @@
 
 # NumPy arrays are a part of the NumPy library,
 # which is a powerful tool for numerical computing in Python.
-#np.array
+#np.array()
 
 import numpy as np
 

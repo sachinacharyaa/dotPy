@@ -26,5 +26,16 @@
 
 # print("subtraction of a and b is:", subtraction)
 
+
+
+
+
+
+
+
+
+
+
+
 # Example 2: Create function with the first 10 prime numbers
 

@@ -14,10 +14,11 @@
 # Works with any iterable: strings, lists, tuples, dictionaries (keys only)
 
 
-# Creating a Set
+# Creating a Set empty
 set1 = set()
-print(set1)                        #set()
+print(set1)                       #set()
 
+# Creating a Set with strings
 set1 = set("GeeksForGeeks")
 print(set1)                       #{' G', 'e ',' k' , 's ','F ','o', 'r'} 
                                   # or can comes in  random order 
