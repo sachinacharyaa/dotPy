@@ -275,60 +275,70 @@
 #        print(i)
 
 
-# FIND THE ARMSTRONG NUMBERS FROM A GIVEN INTERVAL FROM THE USER
+#find the armstrong number from a given interval from the user
 
-def is_armstrong(n: int) -> bool:
-    if n < 0:
-        return False
-    digits = str(n)
-    power = len(digits)
-    total = 0
-    for ch in digits:
-        total += int(ch) ** power
-    return total == n
+# num = int(input("enter a number: "))
 
+# length = len(str(num))
+# orig = num 
+# sum = 0
 
-start = int(input("Enter the starting value: "))
-end = int(input("Enter the ending value: "))
-
-if start > end:
-    start, end = end, start
-
-print(f"Armstrong numbers between {start} and {end}:")
-found_any = False
-for num in range(start, end + 1):
-    if is_armstrong(num):
-        print(num)
-        found_any = True
-
-if not found_any:
-    print("None")
-
-
-# FIND THE PALINDROME NUMBERS FROM A GIVEN INTERVAL FROM THE USER
-
-def is_palindrome(n: int) -> bool:
-    if n < 0:
-        return False
-    s = str(n)
-    return s == s[::-1]
-
-
-start = int(input("Enter the starting value: "))
-end = int(input("Enter the ending value: "))
-
-if start > end:
-    start, end = end, start
-
-print(f"Palindrome numbers between {start} and {end}:")
-found_any = False
-for num in range(start, end + 1):
-    if is_palindrome(num):
-        print(num)
-        found_any = True
-
-if not found_any:
-    print("None")
+# while(num! = 0):
+#      last = num% 10
+#      sum = sum + last ** length
+#      num = num // 10
+# if orig == sum:
+#         print(orig)
 
 
 
+# start = int(input("ente the starting value s: "))
+# endd = int(input("ente the starting value s: "))
+
+
+# for num in range(start, endd + 1):
+#  length = len(str(num))
+#  orig = num 
+#  sum = 0
+
+#  while(num! = 0):
+#      last = num% 10
+#      sum = sum + last ** length
+#      num = num // 10
+#  if orig == sum:
+#         print(orig)
+
+
+# #find the palindrom number from a given interval from the user
+
+# num = int(input("Enter a number: "))
+
+# reverse  = num[:: -1]
+# if num == reverse:
+#     print(f" {num} is a palindrrom")
+# else: 
+#     print(f" {num} is a palindrrom")
+
+
+# random int
+
+import random 
+num = random.randint(1,10)
+
+
+total_guess = 5
+attempts = 0
+
+while attempts < total_guess:
+    guess = int(input("Enter your guess: "))
+    attempts += 1
+    
+    if guess< num:
+        print("Too low!, please enter higher number")
+    elif guess > num:
+        print("High, please enter lower number")
+    else: 
+        print(f'congrats! You guess it right in {attempts} attempts')
+    break
+else:
+    print(f'Sorry!, you lose, The correct num was {num}')
